@@ -231,3 +231,13 @@ let UpdateAudioTrackBar = setInterval(() => {
     }
 }, 1);
 
+
+//handle skipping forward and backward on a given track functionality
+let barIndicatorElement = document.querySelector('.bar-indicator');
+/*
+barIndicatorElement.addEventListener('', () => {
+
+})*/
+
+
+
