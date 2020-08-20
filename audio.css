@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.audio {
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(50vh - 35vh);
+}
+
+#play{
+    border:6px solid grey;
+    border-radius: 80px;
+    padding: 10px;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border: 40px solid rgb(133, 127, 127);
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    margin-left: calc(55px);
+    position: absolute;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.stop{
+    display: flex;
+    width: 60%;
+    height: 80%;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    justify-content: center;
+    opacity: 0;
+}
+
+.lineone{
+    width: 25%;
+    background-color: rgb(133, 127, 127);
+    margin-right: 20%;
+}
+
+.linetwo{
+    width: 25%;
+    background-color: rgb(133, 127, 127);
+}
+
+
+#audioURL{
+    margin: 20px 0 ;
+}
+
+/* animation for the play button */
+
+@keyframes playOut {
+    from{
+    }
+    to{
+        opacity: 0;
+        margin-right: 40px;
+    }
+}
+
+@keyframes playIn{
+    from{
+        margin-left: 80px;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+
+
+
+/*--------------------  Speed Adjustments  -------------------------------- */
+
+.user-interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.leftArrow{
+    display: flex;
+    align-items: center;
+}
+
+.rightArrow{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.slowDown {
+    width: 0;
+    height: 0;
+    border: 30px solid black;
+    border-top-color: transparent;
+    border-left-color: transparent;  
+    border-bottom-color: transparent;
+    margin-right: 15px;
+}
+
+.speedUp{
+    width: 0;
+    height: 0;
+    border: 30px solid black;
+    border-top-color: transparent;
+    border-right-color: transparent;  
+    border-bottom-color: transparent;
+    margin-left: 15px;
+}
+
+
+
+

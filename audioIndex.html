@@ -1,0 +1,47 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Audio js</title>
+        <link rel="stylesheet" href="/audio.css">
+    </head>
+    <body>
+        <div class="audio">
+            <h1>Audio Fiddle</h1>
+            <input id="audioURL" type="url" placeholder="enter audio url">
+            <div class="user-interface">
+
+            <!-- Button for slowing down the audio -->
+            <div class="leftArrow">
+                <div class="slowDown"></div>
+                <h1 class="left-h1">1.0</h1>
+            </div>
+
+
+                <!-- play pause button -->
+            <div id="play">
+                <div class="triangle"></div>
+                <div class="stop">
+                    <div class="lineone"></div>
+                    <div class="linetwo"></div>
+                </div>
+            </div>
+
+            <!-- Button for speeding up the audio -->
+            <div class="rightArrow">
+                <div class="speedUp"></div>
+                <h1 class="right-h1">1.0</h1>
+            </div>
+            
+            </div>
+
+            <!-- Keeps track of the time of the audio being played  -->
+            <span id="audio-time" style="display: none;">0</div>
+
+        </div>
+
+        <!-- Audio fiddle js-->
+    <script src="/audio.js"> </script>
+    </body>
+    </html>
