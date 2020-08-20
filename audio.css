@@ -132,4 +132,33 @@
 
 
 
+/*----------  Track time bar below  ------------- */
 
+.time-bar{
+    width: 70%;
+    height:20px;
+    background-color: rgb(111, 114, 122);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.bar-indicator{
+    height: 30px;
+    width: 30px;
+    background-color: royalblue;
+    border-radius: 50%;
+    left: -15px;
+    position: relative;
+}
+
+.fill-bar{
+    height: 100%;
+    background-color: rgb(37, 63, 139);
+    border-radius: 8px;
+}
+
+
+.duration-display{
+
+}

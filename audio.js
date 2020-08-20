@@ -203,4 +203,28 @@ speedUpBtn.addEventListener('click', () => {
 
 
 
+/* ---------------------   Add track time bar functionality below   ---------------------- */
+
+let UpdateAudioTrackBar = setInterval(() => {
+
+    let fillBarElement = document.querySelector(".fill-bar");
+    let barIndicatorElement = document.querySelector('.bar-indicator');
+
+    let songObject = document.querySelector("audio");
+
+    if(songObject != null){
+        let songDuration = parseFloat(songObject.duration);
+        let currentTime = parseFloat(document.querySelector("#audio-time").innerText);    
+
+        //set the location of the track bar now
+        //barIndicatorElement.style.left = `${(currentTime / songDuration) * 100}%`;
+        fillBarElement.style.width = `${(currentTime / songDuration) * 100}%`;
+    
+        //set duration and current time text 
+        let pElement = document.querySelector('.duration-display');
+
+        pElement.innerText = `${(currentTime/60).toPrecision(2)}/${(songDuration/60).toPrecision(2)}`;
+    
+    }
+}, 1);
 
