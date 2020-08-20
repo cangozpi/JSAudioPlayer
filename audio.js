@@ -223,7 +223,10 @@ let UpdateAudioTrackBar = setInterval(() => {
         //set duration and current time text 
         let pElement = document.querySelector('.duration-display');
 
-        pElement.innerText = `${(currentTime/60).toPrecision(2)}/${(songDuration/60).toPrecision(2)}`;
+        let currentTimeSeconds = currentTime % 60 ;
+        let currentTimeMinutes = (currentTime - currentTimeSeconds) / 60;
+
+        pElement.innerText = `${Math.floor(currentTimeMinutes)}.${Math.floor(currentTimeSeconds)}/${(songDuration/60).toPrecision(2)}`;
     
     }
 }, 1);
